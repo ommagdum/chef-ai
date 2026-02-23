@@ -1,16 +1,83 @@
-# React + Vite
+# Chef AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive AI-powered recipe generator built with React and Vite. Input your available ingredients and let Google's Gemini AI suggest custom recipes for you.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🧑‍🍳 AI-powered recipe generation using Google Gemini
+- ➕ Add multiple ingredients to your collection
+- 📝 Beautiful formatted recipes with Markdown support
+- ⚡ Fast and responsive UI built with React 19
+- 🎨 Modern styling with React
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the ESLint configuration
+- Node.js (v14 or higher)
+- A Google Generative AI API key
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+1. Clone the repository and navigate to the project directory:
+```bash
+cd chef-ai
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Set up your Google API key by creating an `ai.js` configuration file with your API credentials
+
+### Development
+
+Start the development server with hot module replacement:
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+### Build
+
+Build for production:
+```bash
+npm run build
+```
+
+Preview the production build:
+```bash
+npm run preview
+```
+
+## Usage
+
+1. Enter an ingredient in the input field
+2. Click "+ Add ingredient" to add it to your list
+3. Click "Get a recipe" to generate a recipe based on your ingredients
+4. View the AI-generated recipe with formatting
+
+## Technologies Used
+
+- **React 19** - UI framework
+- **Vite** - Build tool with HMR
+- **Google Generative AI** - AI recipe generation
+- **React Markdown** - Recipe rendering
+- **ESLint** - Code quality
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── AiRecipe.jsx       # Displays generated recipe
+│   ├── Form.jsx           # Main form component
+│   ├── Header.jsx         # App header
+│   └── IngredientsList.jsx # Lists added ingredients
+├── ai.js                  # Google Gemini API integration
+├── App.jsx                # Main app component
+├── App.css                # Styling
+└── main.jsx               # Entry point
+```
