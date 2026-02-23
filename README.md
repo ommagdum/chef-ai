@@ -2,6 +2,8 @@
 
 An interactive AI-powered recipe generator built with React and Vite. Input your available ingredients and let Google's Gemini AI suggest custom recipes for you.
 
+**[🚀 Try the Live Demo](https://chef-ai-zeta.vercel.app/)**
+
 ## Features
 
 - 🧑‍🍳 AI-powered recipe generation using Google Gemini
@@ -56,8 +58,11 @@ npm run preview
 
 1. Enter an ingredient in the input field
 2. Click "+ Add ingredient" to add it to your list
-3. Click "Get a recipe" to generate a recipe based on your ingredients
-4. View the AI-generated recipe with formatting
+3. Repeat steps 1-2 until you have **at least 4 ingredients**
+4. Click "Get a recipe" to generate a recipe based on your ingredients
+5. View the AI-generated recipe with formatting
+
+**Note:** You need to add a minimum of 4 ingredients for the AI to generate a good recipe.
 
 ## Technologies Used
 
